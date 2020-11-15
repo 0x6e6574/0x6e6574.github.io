@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css);
+
+body {
+  background: #1a1a1a;
+}
+
+* {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+}
+
+.container {
+  max-width: 760px;
+  margin: auto;
+}
+
+/* misc */
+.top-half {
+  position: relative;
+  min-height: 35vh;
+  background: #131313;
+}
+
+.top-half div {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 30px;
+}
+
+.bottom-half {
+  min-height: 65vh;
+}
+
+.image {
+  position: absolute;
+  bottom: 0;
+  left: 14px;
+  width: 240px;
+}
+
+@media only screen and (max-width: 992px) {
+  .image {
+    display: none;
+  }
+}
+
+/* headings */
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  color: #7aa3a0;
+  text-shadow: 0px 0px 8px #7aa3a0;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+  text-align: center;
+  color: #303a39;
+}
+
+/* lists */
+ul {
+  margin: 20px auto;
+  text-align: center;
+}
+
+li {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 4px;
+  list-style: none;
+  text-align: center;
+}
+
+/* links */
+a {
+  transition: .6s ease;
+  text-decoration: none;
+  color: #587370;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #7aa3a0;
+  text-shadow: 0px 0px 2px #7aa3a0;
+}
+
+/* search box */
+input[type=search] {
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  width: 260px;
+  margin: auto;
+  padding: 1;
+  transition: .6s ease;
+  text-align: center;
+  color: #587370;
+  border: 0;
+  border-bottom: 1px solid #465957;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+  color: #587370
+}
+
+input:focus {
+  text-shadow: 0px 0px 2px #7aa3a0;
+  border-bottom: 1px solid #7aa3a0;
+}
